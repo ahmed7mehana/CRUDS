@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/staylr.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crud</title>
+</head>
+<body>
+
+
+
+<input type="checkbox"  id="light">
+
+<div class="crud">
+<div class="head">
+   <h2>CRUD</h2>
+   <p>Lorem ipsum dolor sit amet.</p>
+</div>
+<div class="input">
+   <input type="text" id="title" placeholder="title">
+   <div class="price">
+      <input onkeyup="gettotal()" type="number" id="price" placeholder="price">
+      <input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes">
+      <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads">
+      <input onkeyup="gettotal()" type="number" id="discount" placeholder="discount">
+      <small  id="total">5555</small>
+   </div>
+   <input type="number" id="count" placeholder="count">
+   <input type="text" id="category" placeholder="category">
+<button id="submet">create</button>
+</div>
+<div class="output">
+   <div class="searchblock">
+      <input type="text" onkeyup="searchdata(this.value)" id="search" placeholder="search">
+      <div class="btnsearch">
+         <button onclick=" getsearchmood(this.id)" id="searchtitle">by title</button>
+         <button onclick=" getsearchmood(this.id)" id="searchcat">by category</button>
+      </div>
+   </div>
+<div id="delall"></div>
+   <table >
+      <tr>
+         <th>id</th>
+         <th>title</th>
+         <th>price</th>
+         <th>taxes</th>
+         <th>ads</th>
+         <th>discount</th>
+         <th>total</th>
+         <th>category</th>
+         <th>update</th>
+         <th>delete</th>
+      </tr>
+
+   <tbody id="tbody">
+   </tbody>
+   </table>
+</div>
+
+
+
+</div>
+<script src="/master.js"></script>
+</body>
+</html>
+
+
+
